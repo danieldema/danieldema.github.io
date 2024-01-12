@@ -43,15 +43,15 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .home-text{
-    width: 80%;
+    width: 60%;
     color: #fff;
     position: absolute;
-    top: 17%;
-    left: 43%;
+    top: 19%;
+    left: 33%;
     transform: translate(-50%, -50%);
 }
 
 .home-text h1{
     font-size: 35px;
-    padding: 35px;
+    padding: 25px;
 }
