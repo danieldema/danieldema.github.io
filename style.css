@@ -55,3 +55,10 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     font-size: 35px;
     padding: 25px;
 }
+
+.math{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
