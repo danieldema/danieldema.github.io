@@ -46,14 +46,19 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     width: 60%;
     color: #fff;
     position: absolute;
-    top: 19%;
-    left: 33%;
+    top: 22%;
+    left: 55%;
     transform: translate(-50%, -50%);
+    font-family: "Lato", non-serifs;
 }
 
 .home-text h1{
-    font-size: 35px;
+    font-size: 50px;
     padding: 25px;
+}
+
+.home-text p{
+    font-size: 20px;
 }
 
 .math{
@@ -61,4 +66,68 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+.picture-of-me{
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    left: 3%;
+}
+
+.contact-form h1{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Lato", non-serifs;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.contact-form input{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 25px;
+    font-family: "Lato", non-serifs;
+}
+
+.contact-form textarea{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 45px;
+    font-family: "Lato", non-serifs;
+}
+
+.contact-form button{
+    background-color: white;
+    border-radius: 20px;
+    border-color: black;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.contact-form button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.alt-contact p{
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
+    font-family: "Lato", non-serifs;
 }
