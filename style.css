@@ -58,7 +58,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 
 .home-text p{
     font-size: 20px;
-    padding: 35px;
+    padding: 22px;
 }
 
 
@@ -132,4 +132,20 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 80px;
     font-size: 18px;
     font-family: "Lato", non-serifs;
+}
+
+.alt-contact a{
+    color: white;
+}
+
+.alt-contact a:hover, a:active{
+    background-color: #333;
+}
+
+.home-text a{
+    color: white;
+}
+
+.home-text a:hover, a:active{
+    background-color: #333;
 }
