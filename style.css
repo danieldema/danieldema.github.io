@@ -19,7 +19,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     display: inline-block;
     padding: 4px 20px;
     position: relative;
-}
+}   
 
 .nav-links ul li a{
     color: #fff;
@@ -43,13 +43,12 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .home-text{
-    width: 60%;
+    width: calc(100% - 10em);
     color: #fff;
-    position: absolute;
-    top: 22%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 2em;
     font-family: "Lato", non-serifs;
+    left: 5em;
 }
 
 .home-text h1{
@@ -59,7 +58,10 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 
 .home-text p{
     font-size: 20px;
+    padding: 35px;
 }
+
+
 
 .math{
     width: 80%;
@@ -69,10 +71,10 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .picture-of-me{
-    position: absolute;
     overflow: hidden;
-    top: 10%;
-    left: 3%;
+    float: left;
+    margin-right: 3em;
+    margin-bottom: 1em;
 }
 
 .contact-form h1{
