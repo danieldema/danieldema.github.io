@@ -122,8 +122,9 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .contact-form button:hover{
-    opacity: 80%;
+    opacity: 70%;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .alt-contact p{
@@ -140,6 +141,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 
 .alt-contact a:hover, a:active{
     background-color: #333;
+    transition: 0.5s;
 }
 
 .home-text a{
@@ -148,4 +150,5 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 
 .home-text a:hover, a:active{
     background-color: #333;
+    transition: 0.5s;
 }
