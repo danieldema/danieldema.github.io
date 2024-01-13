@@ -168,6 +168,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 3em;
     margin-right: 30em;
     font-family: "Lato", non-serifs;
+    font-size: 18px;
 }
 
 .math-talks h1{
@@ -188,14 +189,44 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     transition: 0.5s;
 }
 
-.math-essays h1{
+.math-essays{
     color: #fff;
-    margin-left: 3em;
     margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 30em;
+    font-family: "Lato", non-serifs;
+    font-size: 18px;
 }
 
-.math-current h1{
+.math-essays h1{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.math-essays ul li{
+    padding: 5px;
+}
+
+.math-essays ul li a{
     color: #fff;
-    margin-left: 3em;
+}
+
+.math-essays ul li a:hover{
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.math-current{
+    color: #fff;
     margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 30em;
+    font-family: "Lato", non-serifs;
+    font-size: 18px;
+}
+
+
+.math-current h1{
+    padding: 5px;
+    font-size: 30px;
 }
