@@ -62,7 +62,6 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 
-
 .math{
     width: 80%;
     margin: auto;
@@ -75,6 +74,16 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     float: left;
     margin-right: 3em;
     margin-bottom: 1em;
+}
+
+.picture-of-me ul{
+    margin-left: 7em;
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.picture-of-me ul li{
+    padding: 7px;
 }
 
 .contact-form h1{
