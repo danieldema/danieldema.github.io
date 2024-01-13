@@ -148,7 +148,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: white;
 }
 
-.alt-contact a:hover, a:active{
+.alt-contact a:hover{
     background-color: #333;
     transition: 0.5s;
 }
@@ -157,25 +157,45 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: white;
 }
 
-.home-text a:hover, a:active{
+.home-text a:hover{
     background-color: #333;
     transition: 0.5s;
 }
 
-.math-talks h1{
+.math-talks{
     color: #fff;
     margin-left: 4em;
     margin-top: 3em;
+    margin-right: 30em;
+    font-family: "Lato", non-serifs;
+}
+
+.math-talks h1{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.math-talks ul li{
+    padding: 5px;
+}
+
+.math-talks ul li a{
+    color: #fff;
+}
+
+.math-talks ul li a:hover{
+    background-color: #333;
+    transition: 0.5s;
 }
 
 .math-essays h1{
     color: #fff;
-    margin-left: 4em;
-    margin-top: 6em;
+    margin-left: 3em;
+    margin-top: 1em;
 }
 
 .math-current h1{
     color: #fff;
-    margin-left: 4em;
-    margin-top: 9em;
+    margin-left: 3em;
+    margin-top: 1em;
 }
