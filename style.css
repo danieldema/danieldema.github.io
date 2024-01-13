@@ -161,3 +161,21 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     background-color: #333;
     transition: 0.5s;
 }
+
+.math-talks h1{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 3em;
+}
+
+.math-essays h1{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 6em;
+}
+
+.math-current h1{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 9em;
+}
