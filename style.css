@@ -47,7 +47,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: #fff;
     position: relative;
     top: 2em;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
     left: 5em;
 }
 
@@ -90,7 +90,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: #fff;
     text-align: center;
     font-size: 50px;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
     padding-top: 40px;
     padding-bottom: 30px;
 }
@@ -104,7 +104,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     border-radius: 10px;
     border-color: black;
     margin-bottom: 25px;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
 }
 
 .contact-form textarea{
@@ -116,7 +116,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     border-radius: 10px;
     border-color: black;
     margin-bottom: 45px;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
 }
 
 .contact-form button{
@@ -141,7 +141,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     text-align: center;
     margin-top: 80px;
     font-size: 18px;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
 }
 
 .alt-contact a{
@@ -167,7 +167,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-left: 4em;
     margin-top: 3em;
     margin-right: 5em;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 
@@ -194,7 +194,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 1em;
     margin-left: 4em;
     margin-right: 5em;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 
@@ -221,7 +221,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 1em;
     margin-left: 4em;
     margin-right: 30em;
-    font-family: "Lato", non-serifs;
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 
