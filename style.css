@@ -220,15 +220,27 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: #fff;
     margin-top: 1em;
     margin-left: 4em;
-    margin-right: 30em;
+    margin-right: 5em;
     font-family: 'Montserrat';
     font-size: 18px;
 }
 
-
 .math-current h1{
     padding: 5px;
     font-size: 30px;
+}
+
+.math-current ul li{
+    padding: 5px;
+}
+
+.math-current ul li a{
+    color: #fff;
+}
+
+.math-current ul li a:hover{
+    background-color: #333;
+    transition: 0.5s;
 }
 
 .teaching-text{
