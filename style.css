@@ -260,3 +260,47 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     background-color: #333;
     transition: 0.5s;
 }
+
+.personal-reading{
+    color: #fff;
+    margin-left: 4em;
+    font-size: 18px;
+    margin-top: 3em;
+    font-family: 'Montserrat';
+    padding: 5px;
+}
+
+.personal-reading h1{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.personal-reading p{
+    padding: 5px;
+}
+
+.personal-reading ul{
+    padding: 5px;
+}
+
+.personal-epsilon{
+    color: #fff;
+    margin-left: 4em;
+    font-size: 18px;
+    margin-top: 3em;
+    font-family: 'Montserrat';
+    padding: 5px;
+}
+
+.personal-epsilon h1{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.personal-epsilon p{
+    padding: 5px;
+}
+
+.personal-epsilon img{
+    padding: 5px;
+}
