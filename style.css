@@ -243,6 +243,15 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     transition: 0.5s;
 }
 
+.math-current a{
+    color: #fff
+}
+
+.math-current a:hover{
+    background-color: #333;
+    transition: 0.5s;
+}
+
 .teaching-text{
     color: #fff;
     margin-left: 4em;
