@@ -47,7 +47,7 @@ body {background-color: #102b3f;}
     color: #fff;
     position: relative;
     top: 2em;
-    left: 5em;
+    left: 3em;
 }
 
 .home-text h1{
@@ -66,6 +66,8 @@ body {background-color: #102b3f;}
 
 .home-text ul li{
     font-family: 'Montserrat';
+    display: inline-block;
+    font-size:25px;
 }
 
 .footer{position: fixed;
@@ -105,7 +107,7 @@ body {background-color: #102b3f;}
 }
 
 .picture-of-me ul{
-    margin-left: 7em;
+    margin-left: 6.2em;
     margin-top: 1em;
     list-style-type: none;
 }
