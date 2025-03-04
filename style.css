@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {background-color: hsla(209, 90%, 24%, 0.781);}
+body {background-color: #102b3f;}
 
 .nav-links{
     flex: 1;
@@ -11,7 +11,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     background-color: #333;
     overflow: hidden;
     padding: 13px 10px;
-
+    border-bottom:2px solid black;
 }
 
 .nav-links ul li{
@@ -25,7 +25,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat';
 }
 
 .nav-links ul li::after{
@@ -47,20 +47,40 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     color: #fff;
     position: relative;
     top: 2em;
-    font-family: 'Montserrat';
     left: 5em;
 }
 
 .home-text h1{
     font-size: 50px;
     padding: 25px;
+    font-family: 'Montserrat';
+    margin-left: 320px;
 }
 
 .home-text p{
+    margin-top: 30px;
     font-size: 20px;
     padding: 22px;
+    font-family: 'Roboto';
 }
 
+.home-text ul li{
+    font-family: 'Montserrat';
+}
+
+.footer{position: fixed;
+        bottom: 0;
+        width: 100%;
+        flex: 1;
+        text-align: left;
+        background-color: #333;
+        overflow: hidden;
+        line-height: 1.8;
+        text-align: center;
+        color: #fff;
+        border-top:2px solid black;
+        font-family: 'Montserrat';
+}
 
 .math{
     width: 80%;
@@ -76,6 +96,14 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-bottom: 1em;
 }
 
+
+.picture-of-me img{
+    display: block;
+    border-radius: 200px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
 .picture-of-me ul{
     margin-left: 7em;
     margin-top: 1em;
@@ -89,7 +117,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 .contact-form h1{
     color: #fff;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Montserrat';
     padding-top: 40px;
     padding-bottom: 30px;
@@ -97,31 +125,31 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 
 .contact-form input{
     background-color: white;
-    width: 70%;
-    margin-left: 12%;
+    width: 50%;
     font-size: 20px;
+    margin-left: 23.5%;
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 2px;
     border-color: black;
     margin-bottom: 25px;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
 }
 
 .contact-form textarea{
     background-color: white;
-    width: 70%;
-    margin-left: 12%;
+    width: 50%;
+    margin-left: 23.5%;
     font-size: 20px;
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 2px;
     border-color: black;
     margin-bottom: 45px;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
 }
 
 .contact-form button{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 2px;
     border-color: black;
     font-size: 22px;
     padding: 10px 18px;
@@ -131,7 +159,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .contact-form button:hover{
-    opacity: 70%;
+    opacity: 50%;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -141,7 +169,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     text-align: center;
     margin-top: 80px;
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
 }
 
 .alt-contact a{
@@ -149,7 +177,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .alt-contact a:hover{
-    background-color: #333;
+    background-color: black;
     transition: 0.5s;
 }
 
@@ -158,26 +186,30 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .home-text a:hover{
-    background-color: #333;
+    background-color: black;
     transition: 0.5s;
+    transform: scale(1.08);
 }
+
 
 .math-talks{
     color: #fff;
     margin-left: 4em;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-right: 5em;
-    font-family: 'Montserrat';
     font-size: 18px;
 }
 
 .math-talks h1{
     padding: 5px;
     font-size: 30px;
+    font-family: 'Montserrat';
 }
+
 
 .math-talks ul li{
     padding: 5px;
+    font-family: 'Roboto';
 }
 
 .math-talks ul li a{
@@ -185,7 +217,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .math-talks ul li a:hover{
-    background-color: #333;
+    background-color: black;
     transition: 0.5s;
 }
 
@@ -194,25 +226,27 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 1em;
     margin-left: 4em;
     margin-right: 5em;
-    font-family: 'Montserrat';
     font-size: 18px;
 }
 
 .math-essays h1{
     padding: 5px;
     font-size: 30px;
+    font-family: 'Montserrat';
 }
 
 .math-essays ul li{
     padding: 5px;
+    font-family: 'Roboto';
 }
 
 .math-essays ul li a{
     color: #fff;
+    font-family: 'Roboto';
 }
 
 .math-essays ul li a:hover{
-    background-color: #333;
+    background-color: black;
     transition: 0.5s;
 }
 
@@ -221,17 +255,18 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-top: 1em;
     margin-left: 4em;
     margin-right: 5em;
-    font-family: 'Montserrat';
     font-size: 18px;
 }
 
 .math-current h1{
     padding: 5px;
     font-size: 30px;
+    font-family: 'Montserrat'
 }
 
 .math-current ul li{
     padding: 5px;
+    font-family: 'Roboto';
 }
 
 .math-current ul li a{
@@ -257,7 +292,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-left: 4em;
     font-size: 18px;
     margin-top: 3em;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     padding: 5px;
 }
 
@@ -266,7 +301,7 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .teaching-text a:hover{
-    background-color: #333;
+    background-color: black;
     transition: 0.5s;
 }
 
@@ -275,21 +310,24 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-left: 4em;
     font-size: 18px;
     margin-top: 3em;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     padding: 5px;
 }
 
 .personal-reading h1{
     padding: 5px;
     font-size: 30px;
+    font-family: 'Montserrat';
 }
 
 .personal-reading p{
     padding: 5px;
+    font-family: 'Roboto';
 }
 
 .personal-reading ul{
     padding: 5px;
+    font-family: 'Roboto';
 }
 
 .personal-epsilon{
@@ -297,13 +335,14 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
     margin-left: 4em;
     font-size: 18px;
     margin-top: 3em;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     padding: 5px;
 }
 
 .personal-epsilon h1{
     padding: 5px;
     font-size: 30px;
+    font-family: 'Montserrat';
 }
 
 .personal-epsilon p{
@@ -311,5 +350,6 @@ body {background-color: hsla(209, 90%, 24%, 0.781);}
 }
 
 .personal-epsilon img{
-    padding: 5px;
+    border-radius: 10%;
+    border: 2px solid black;
 }
