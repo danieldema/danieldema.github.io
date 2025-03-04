@@ -46,7 +46,7 @@ body {background-color: #102b3f;}
     width: calc(100% - 10em);
     color: #fff;
     position: relative;
-    top: 2em;
+    top: 1em;
     left: 3em;
 }
 
@@ -54,7 +54,7 @@ body {background-color: #102b3f;}
     font-size: 50px;
     padding: 25px;
     font-family: 'Montserrat';
-    margin-left: 320px;
+    margin-left: 325px;
 }
 
 .home-text p{
