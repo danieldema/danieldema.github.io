@@ -5,6 +5,25 @@
 
 body {background-color: #102b3f;}
 
+.transition-1{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.35s ease-out;
+}
+
+.transition-1.is-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
 .nav-links{
     flex: 1;
     text-align: left;
@@ -49,6 +68,7 @@ body {background-color: #102b3f;}
     top: 1em;
     left: 3em;
 }
+
 
 .home-text h1{
     font-size: 50px;
