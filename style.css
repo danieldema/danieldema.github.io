@@ -15,7 +15,7 @@ body {background-color: #102b3f;}
     background-color: black;
     opacity: 0;
     pointer-events: none;
-    transition: 0.35s ease-out;
+    transition: 0.25s ease-out;
 }
 
 .transition-1.is-active{
