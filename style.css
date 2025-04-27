@@ -213,6 +213,33 @@ body {background-color: #102b3f;}
     transform: scale(1.08);
 }
 
+.math-under{
+    text-decoration: underline
+}
+
+.math-bookshelf{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-right: 5em;
+    font-size: 18px; 
+}
+
+.math-bookshelf h1{
+    padding: 5px;
+    font-size: 35px;
+    font-family: 'Montserrat';
+}
+
+.math-bookshelf p{
+    padding: 5px;
+    font-family: 'Roboto';
+}
+
+.math-bookshelf ul li{
+    padding: 5px;
+    font-family: 'Roboto';
+}
 
 .math-talks{
     color: #fff;
@@ -269,43 +296,6 @@ body {background-color: #102b3f;}
 
 .math-essays ul li a:hover{
     background-color: black;
-    transition: 0.5s;
-}
-
-.math-current{
-    color: #fff;
-    margin-top: 2em;
-    margin-left: 4em;
-    margin-right: 5em;
-    font-size: 18px;
-}
-
-.math-current h1{
-    padding: 5px;
-    font-size: 35px;
-    font-family: 'Montserrat'
-}
-
-.math-current ul li{
-    padding: 5px;
-    font-family: 'Roboto';
-}
-
-.math-current ul li a{
-    color: #fff;
-}
-
-.math-current ul li a:hover{
-    background-color: #333;
-    transition: 0.5s;
-}
-
-.math-current a{
-    color: #fff
-}
-
-.math-current a:hover{
-    background-color: #333;
     transition: 0.5s;
 }
 
