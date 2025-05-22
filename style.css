@@ -365,3 +365,66 @@ body {background-color: #102b3f;}
     border-radius: 10%;
     border: 2px solid black;
 }
+
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.major-projects{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-right: 5em;
+    font-size: 18px;
+}
+
+.major-projects h1{
+    padding: 5px;
+    font-size: 35px;
+    font-family: 'Montserrat';
+}
+
+.mini-projects{
+    color: #fff;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-right: 5em;
+    font-size: 18px;
+}
+
+.mini-projects h1{
+    padding: 5px;
+    font-size: 35px;
+    font-family: 'Montserrat';
+}
+
+.major-projects ul li{
+    padding: 5px;
+    font-family: 'Roboto';
+}
+
+.major-projects ul li a{
+    color: #fff;
+}
+
+.major-projects ul li a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.mini-projects ul li{
+    padding: 5px;
+    font-family: 'Roboto';
+}
+
+.mini-projects ul li a{
+    color: #fff;
+}
+
+.mini-projects ul li a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
