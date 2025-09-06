@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-
-<html lang = "en-CA">
+<html lang="en-CA">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Daniel's Website - Personal </title>
-    <link rel="stylesheet" href = "style.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel = "stylesheet" type = "text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <title>Daniel's Website - Personal</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<script src = "scripts.js"></script>
+
 <body>
+    <div class="transition transition-1 is-active"></div>
 
-    <div class = "transition transition-1 is-active"></div>
-
-    <section class="header">
-        <nav>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="math.html">Math</a></li>-->
-                    <!--<li><a href="teaching.html">Teaching</a></li>-->
-                    <li><a href="personal.html">Personal</a></li>
-                    <!--<li><a href="contact.html">Contact Me</a></li>-->
-                </ul>
-            </div>
-        </nav>
-
-        <div class = "personal-epsilon">
-            <h1> Epsilon </h1>
-            <p> I have a five year old bichon frisé named Epsilon. Here are some of my favorite photos of him:</p>
-            <br>
-            <img src = "images/epsi1.png">
-            <img src = "images/epsi2.png">
-            <img src = "images/epsi3.png">
-        </div>
-        <!-- Temporarily omitted
-        <div class = "personal-reading">
-            <h1> Reading List </h1>
-            <p> I've made a recent commitment to spend more time on recreational reading. This list contains books I am currently reading/have read this year. </p>
-            <br>
-            <ul>
-                <li><i>The Man Who Loved Only Numbers</i> by Paul Hoffman (in progress)</li>
-                <li><i>A Game of Thrones</i> by George R.R. Martin (in progress)</li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Daniel Dema</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="personal.html">Personal</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        -->
-        
-    </section>
-</body>
+    </nav>
 
+    <main class="main-content">
+        <section class="personal-section">
+            <h1 class="section-title">Epsilon</h1>
+            <p>I have a five year old bichon frisé named Epsilon. Here are some of my favorite photos of him:</p>
+            
+            <div class="epsilon-gallery">
+                <img src="images/epsi1.png" alt="Epsilon photo 1">
+                <img src="images/epsi2.png" alt="Epsilon photo 2">
+                <img src="images/epsi3.png" alt="Epsilon photo 3">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>Last updated: 28-08-2025</div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
 </html>

@@ -1,66 +1,95 @@
 <!DOCTYPE html>
-
-<html lang = "en-CA">
+<html lang="en-CA">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Daniel's Website - Projects </title>
-    <link rel="stylesheet" href = "style.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel = "stylesheet" type = "text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <title>Daniel's Website - Projects</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<script src = "scripts.js"></script>
 
 <body>
-
-    <div class = "transition transition-1 is-active"></div>
+    <div class="transition transition-1 is-active"></div>
     
-    <section class="header">
-        <nav>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="math.html">Math</a></li>-->
-                    <!--<li><a href="teaching.html">Teaching</a></li>-->
-                    <li><a href="personal.html">Personal</a></li>
-                    <!--<li><a href="contact.html">Contact Me</a></li>-->
-                </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Daniel Dema</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="personal.html">Personal</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-        <div class = "major-projects">
-            <h1>Major Projects</h1>
-            <br>
-            <ul>
-                <li><a href = "https://github.com/danieldema/appendicitis_analysis">Pediatric Appendicitis Prediction System</a>: 
-                A machine learning approach for predicting appendicitis in pediatric patients, featuring model comparison and web deployment of a 97% accurate random
-                forest model. </li>
-                <li><a href = "https://github.com/danieldema/MATH6642/tree/main/final_project">Predictive Inference for Cognitive Decline Using Mixed Effects Models</a>:
-                A longitudinal analysis of the OASIS MRI dataset for predictive inference of biological and socioeconomic factors that contribute to cognitive decline, and an
-                exploration of the limitations of mixed effects models on non-normal response data.</li>
-                <li><a href = "http://danieldema-resume.us-east-2.elasticbeanstalk.com/">Cloud Resume</a>: 
-                A cloud version of my resume built with Flask and deployed on AWS Elastic Beanstalk, featuring visitor analytics, PDF downloads, and responsive design.</li>
-            </ul>
         </div>
-        <div class = mini-projects>
-            <h1>Mini Projects</h1>
-            <br>
-            <ul>
-                <li><a href = "https://github.com/danieldema/aerofit-analysis">Aerofit Treadmill Sales Analysis</a>: An in-depth exploration of customer purchasing patterns and
-                product preferences for Aerofit treadmill sales, utilizing SQL queries and data visualization.</li>
-                <li><a href = "https://github.com/danieldema/student_lifestyle"> Student Lifestyle & Academic Performance Analysis</a>: A machine learning investigation into how
-                lifestyle factors influence student academic success, featuring a comparative study of four different regression models.</li>
-                <li><a href = "https://github.com/danieldema/personal-netflix-analysis">Personal Netflix Viewing Data Analysis</a>: An analytical deep dive into personal Netflix
-                viewing habits using real account data, including exploratory data analysis, predictive modeling, and data visualization to reveal viewing trends and
-                preferences.</li>
-                <li><a href = "https://github.com/danieldema/connect4"> Connect Four Game Implementation</a>: A complete Python recreation of the classic Connect Four game,
-                available in both command-line and GUI formats. </li>
-            </ul>
-        </div>
+    </nav>
 
+    <main class="main-content">
+        <section class="projects-section">
+            <h1 class="section-title">Major Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/appendicitis_analysis">Pediatric Appendicitis Prediction System</a></h3>
+                    <p class="project-description">A machine learning approach for predicting appendicitis in pediatric patients, featuring model comparison and web deployment of a 97% accurate random forest model.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/MATH6642/tree/main/final_project">Predictive Inference for Cognitive Decline Using Mixed Effects Models</a></h3>
+                    <p class="project-description">A longitudinal analysis of the OASIS MRI dataset for predictive inference of biological and socioeconomic factors that contribute to cognitive decline, and an exploration of the limitations of mixed effects models on non-normal response data.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3><a href="http://danieldema-resume.us-east-2.elasticbeanstalk.com/">Cloud Resume</a></h3>
+                    <p class="project-description">A cloud version of my resume built with Flask and deployed on AWS Elastic Beanstalk, featuring visitor analytics, PDF downloads, and responsive design.</p>
+                </div>
             </div>
-    </section>
+
+            <h1 class="section-title">Mini Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/aerofit-analysis">Aerofit Treadmill Sales Analysis</a></h3>
+                    <p class="project-description">An in-depth exploration of customer purchasing patterns and product preferences for Aerofit treadmill sales, utilizing SQL queries and data visualization.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/student_lifestyle">Student Lifestyle & Academic Performance Analysis</a></h3>
+                    <p class="project-description">A machine learning investigation into how lifestyle factors influence student academic success, featuring a comparative study of four different regression models.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/personal-netflix-analysis">Personal Netflix Viewing Data Analysis</a></h3>
+                    <p class="project-description">An analytical deep dive into personal Netflix viewing habits using real account data, including exploratory data analysis, predictive modeling, and data visualization to reveal viewing trends and preferences.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3><a href="https://github.com/danieldema/connect4">Connect Four Game Implementation</a></h3>
+                    <p class="project-description">A complete Python recreation of the classic Connect Four game, available in both command-line and GUI formats.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>Last updated: 28-08-2025</div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
