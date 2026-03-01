@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Dema - Resume</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f7fa 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #e5e5e5;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .header {
+            background: white;
+            color: #333;
+            padding: 40px 30px 30px;
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .name {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 2.6em;
+            font-weight: 300;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            color: #1a1a1a;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .contact-item {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9em;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+            color: #666;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-1px);
+            color: #333;
+        }
+
+        .contact-item a {
+            color: #0366d6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #0253cc;
+            text-decoration: underline;
+            transform: translateY(-1px);
+        }
+
+        .contact-item i {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.6em;
+            color: #222;
+            margin-bottom: 18px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 400;
+            border-bottom: 2px solid #0366d6;
+            letter-spacing: 0.3px;
+        }
+
+        .education-item {
+            background: white;
+            border-left: 2px solid #ddd;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 6px 6px 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .experience-item, .project-item {
+            background: white;
+            border-left: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 6px 6px 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            transform: translateX(0);
+        }
+
+        .education-item:hover, .experience-item:hover, .project-item:hover {
+            border-left-color: #0366d6;
+            box-shadow: 0 4px 16px rgba(3, 102, 214, 0.15), 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateX(4px);
+            background: #fafbfc;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .item-title {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.15em;
+            font-weight: 400;
+            color: #222;
+        }
+
+        .item-date {
+            color: #718096;
+            font-weight: 400;
+            white-space: nowrap;
+            font-size: 0.85em;
+            letter-spacing: 0.2px;
+        }
+
+        .item-subtitle {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .item-header + .item-subtitle {
+            margin-top: -5px;
+        }
+
+        .skills-tag {
+            background: #edf2f7;
+            color: #2d3748;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #cbd5e0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        .skills-tag:hover {
+            background: #e2e8f0;
+            border-color: #a0aec0;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievements {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .achievements li {
+            font-family: 'Georgia', serif;
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .achievements li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.1em;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .technical-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e1e4e8;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            border: 1px solid #cbd5e0;
+        }
+
+        .skill-title {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 400;
+            color: #222;
+            margin-bottom: 6px;
+            font-size: 1em;
+        }
+
+        .skill-list {
+            color: #586069;
+            line-height: 1.5;
+            font-size: 0.9em;
+        }
+
+        .highlight {
+            background: #e8f4fd;
+            color: #333;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .pdf-download {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #0366d6;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 10;
+            font-size: 0.9em;
+        }
+
+        .pdf-download:hover {
+            background: #0253cc;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(3, 102, 214, 0.4);
+        }
+
+        .back-link {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #586069;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 10;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #0366d6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 6px;
+            }
+
+            .header {
+                padding: 40px 20px 30px;
+            }
+
+            .name {
+                font-size: 2.2em;
+            }
+
+            .contact-info {
+                gap: 15px;
+                overflow-x: auto;
+                justify-content: center;
+                padding: 0 20px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .contact-info::-webkit-scrollbar {
+                display: none;
+            }
+
+            .contact-item {
+                font-size: 0.9em;
+            }
+
+            .pdf-download {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.85em;
+            }
+
+            .back-link {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+            }
+
+            .main-content {
+                padding: 30px 25px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .technical-skills {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white !important;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+
+            .container {
+                box-shadow: none !important;
+                border-radius: 0;
+                border: none;
+                max-width: none;
+                margin: 0;
+            }
+
+            .header {
+                border-bottom: 1px solid #ccc;
+                padding: 30px 20px 20px;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .back-link,
+            .pdf-download {
+                display: none !important;
+            }
+
+            .section-title {
+                color: #222 !important;
+                border-bottom-color: #0366d6 !important;
+                break-after: avoid;
+            }
+
+            .experience-item,
+            .project-item,
+            .education-item {
+                break-inside: avoid;
+                margin-bottom: 12px;
+            }
+
+            .achievements {
+                break-inside: avoid;
+            }
+
+            .highlight {
+                background: #e8f4fd !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .skills-tag {
+                background: #edf2f7 !important;
+                border-color: #cbd5e0 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <a href="docs/Daniel_Dema_Resume.pdf" class="pdf-download" download>
+            <i class="fas fa-download"></i>
+            Download PDF
+        </a>
+        <div class="header-content">
+            <h1 class="name">DANIEL DEMA</h1>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>416-554-8453</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:danieldema42@gmail.com">danieldema42@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/danieldema/">linkedin.com/in/danieldema</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/danieldema">github.com/danieldema</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">York University</div>
+                        <div class="item-subtitle">Master of Arts in Data Science <span style="font-style: normal;">| <span class="highlight">GPA: 3.77</span></span></div>
+                    </div>
+                    <div class="item-date">Sep. 2024 – Apr. 2027 (Expected)</div>
+                </div>
+                <div class="item-subtitle">Relevant Coursework: Statistical Data Science, Applied Statistics, Longitudinal Data Analysis</div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">University of Toronto</div>
+                        <div class="item-subtitle">Honours Bachelor of Science in Mathematics</div>
+                    </div>
+                    <div class="item-date">Sep. 2019 – Apr. 2024</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Engineering Intern</div>
+                        <div class="item-subtitle">
+                            Vitruvius Innovation │
+                            <span class="skills-tag">Python</span>
+                            <span class="skills-tag">pandas</span>
+                            <span class="skills-tag">scikit-learn</span>
+                            <span class="skills-tag">XGBoost</span>
+                            <span class="skills-tag">Flask</span>
+                            <span class="skills-tag">JavaScript/TypeScript</span>
+                            <span class="skills-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="item-date">Jan. 2026 – Present</div>
+                </div>
+                <ul class="achievements">
+                    <li>Building end-to-end <span class="highlight">machine learning pipeline</span> for cardiac and pulmonary diagnostic device, including data processing via <span class="highlight">pandas</span>, model development and evaluation via <span class="highlight">scikit-learn</span> and <span class="highlight">XGBoost</span></li>
+                    <li>Designing <span class="highlight">Flask API</span> and <span class="highlight">JavaScript/TypeScript integration layer</span> to deploy machine learning models in production device interface; implementing automated retraining pipelines for continuous model improvement</li>
+                    <li>Diagnosed and eliminated performance bottleneck causing <span class="highlight">1,000+ failed API requests per minute</span>; refactored data fetching logic to implement lazy loading, achieving <span class="highlight">99.4% reduction in network traffic</span> (62K+ to 360 requests/hour), <span class="highlight">68.5% faster page loads</span>, and preventing <span class="highlight">42K+ unnecessary API calls</span> to planned ML model endpoint</li>
+                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3 hours for 50 data points</span> to <span class="highlight">under 3 minutes for 170+ data points</span></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Freelance Data Engineer</div>
+                        <div class="item-subtitle">
+                            Superior Audio │
+                            <span class="skills-tag">PostgreSQL</span>
+                            <span class="skills-tag">Python</span>
+                            <span class="skills-tag">pandas</span>
+                        </div>
+                    </div>
+                    <div class="item-date">May 2025 – Dec. 2025</div>
+                </div>
+                <ul class="achievements">
+                    <li>Replaced fragmented Google Sheets with a centralized <span class="highlight">PostgreSQL</span> database, saving the business owner <span class="highlight">10+ hours/week</span> on manual data entry and reducing data entry errors by <span class="highlight">37%</span></li>
+                    <li>Designed and deployed a full-stack <span class="highlight">CRUD</span> application with <span class="highlight">SQL-based ETL pipelines</span> for real-time sales tracking, inventory management, and automated reporting</li>
+                    <li>Built an interactive dashboard with <span class="highlight">15+ real-time data views</span>, including sales trends, stock alerts, and top-selling products, driving data-informed decisions and contributing to a <span class="highlight">47% profit growth</span> in Q2 vs. Q1 2025 and <span class="highlight">21% profit growth</span> in Q3 vs. Q2 2025</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Teaching Assistant</div>
+                        <div class="item-subtitle">University of Toronto & York University</div>
+                    </div>
+                    <div class="item-date">Sep. 2021 – Present</div>
+                </div>
+                <ul class="achievements">
+                    <li>Taught <span class="highlight">15+ distinct math courses</span>, including Real Analysis, Abstract Algebra, Calculus I & II, Linear Algebra I & II; led weekly tutorials of <span class="highlight">40+ students</span> and graded coursework for <span class="highlight">5500+ students</span> across 14+ semesters at two universities</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Appendicitis Prediction System</div>
+                        <div class="item-subtitle">
+                            <span class="skills-tag">Python</span>
+                            <span class="skills-tag">scikit-learn</span>
+                            <span class="skills-tag">pandas</span>
+                            <span class="skills-tag">Flask</span>
+                            <span class="skills-tag">HTML/CSS</span>
+                            <span class="skills-tag">Docker</span>
+                            <span class="skills-tag">Microsoft Azure</span>
+                            <span class="skills-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="achievements">
+                    <li>Developed and optimized a Random Forest model using <span class="highlight">scikit-learn</span>, applying cross-validation to achieve <span class="highlight">97% accuracy</span> with a low <span class="highlight">3% false negative rate</span> for appendicitis diagnosis based on symptoms and clinical signs</li>
+                    <li>Built an interactive <span class="highlight">HTML/CSS</span> front end for symptom input, linked to a <span class="highlight">Flask</span> backend for real-time predictions; containerized the app with <span class="highlight">Docker</span> and deployed it on <span class="highlight">Microsoft Azure</span></li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Alzheimer's Cognitive Trajectory Modeling</div>
+                        <div class="item-subtitle">
+                            <span class="skills-tag">R</span>
+                            <span class="skills-tag">RStudio</span>
+                            <span class="skills-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="achievements">
+                    <li>Modeled cognitive decline trajectories from <span class="highlight">350+ longitudinal observations</span> using mixed-effects spline models in R; improved model fit (conditional <span class="highlight">R² from 0.73 to 0.82</span>)</li>
+                    <li>Found that socioeconomic status boosts baseline cognition but is linked to faster decline over time through significant interactions with age and brain volume (<span class="highlight">p-values < 0.002</span>)</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Cloud Resume</div>
+                        <div class="item-subtitle">
+                            <span class="skills-tag">Python</span>
+                            <span class="skills-tag">Flask</span>
+                            <span class="skills-tag">AWS</span>
+                            <span class="skills-tag">Git</span>
+                            <span class="skills-tag">SQL</span>
+                            <span class="skills-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="achievements">
+                    <li>Developed and deployed a <span class="highlight">Flask web application</span> on <span class="highlight">AWS Elastic Beanstalk</span> with <span class="highlight">RDS</span> backend and automated <span class="highlight">CI/CD via GitHub Actions</span></li>
+                    <li>Designed a responsive <span class="highlight">HTML/CSS interface</span>, enabling users to view a live visitor counter, download a PDF version of the resume, and explore daily visit trends with month/year filters powered by <span class="highlight">SQL aggregation queries</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="technical-skills">
+                <div class="skill-category">
+                    <div class="skill-title">Languages</div>
+                    <div class="skill-list">Python, SQL, R, HTML/CSS, JavaScript/TypeScript</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Libraries & Frameworks</div>
+                    <div class="skill-list">scikit-learn, pandas, NumPy, Matplotlib, NLTK, Flask, XGBoost</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Tools & Platforms</div>
+                    <div class="skill-list">Git, Docker, Jupyter Notebook, VS Code, RStudio, Microsoft Excel, LaTeX</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Databases & Cloud</div>
+                    <div class="skill-list">PostgreSQL, AWS, Microsoft Azure</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'docs/Daniel_Dema_Resume.pdf';
+            link.download = 'Daniel_Dema_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
