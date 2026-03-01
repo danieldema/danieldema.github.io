@@ -503,20 +503,22 @@
                         <div class="item-subtitle">
                             Vitruvius Innovation │
                             <span class="skills-tag">Python</span>
-                            <span class="skills-tag">pandas</span>
                             <span class="skills-tag">scikit-learn</span>
                             <span class="skills-tag">XGBoost</span>
-                            <span class="skills-tag">Flask</span>
-                            <span class="skills-tag">JavaScript/TypeScript</span>
-                            <span class="skills-tag">Git</span>
+                            <span class="skills-tag">PyTorch</span>
+                            <span class="skills-tag">FastAPI</span>
+                            <span class="skills-tag">JavaScript</span>
+                            <span class="skills-tag">Docker</span>
+                            <span class="skills-tag">GCP</span>
                         </div>
                     </div>
                     <div class="item-date">Jan. 2026 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Building end-to-end <span class="highlight">machine learning pipeline</span> for cardiac and pulmonary diagnostic device, including data processing via <span class="highlight">pandas</span>, model development and evaluation via <span class="highlight">scikit-learn</span> and <span class="highlight">XGBoost</span></li>
-                    <li>Designing <span class="highlight">Flask API</span> and <span class="highlight">JavaScript/TypeScript integration layer</span> to deploy machine learning models in production device interface; implementing automated retraining pipelines for continuous model improvement</li>
-                    <li>Diagnosed and eliminated performance bottleneck causing <span class="highlight">1,000+ failed API requests per minute</span>; refactored data fetching logic to implement lazy loading, achieving <span class="highlight">99.4% reduction in network traffic</span> (62K+ to 360 requests/hour), <span class="highlight">68.5% faster page loads</span>, and preventing <span class="highlight">42K+ unnecessary API calls</span> to planned ML model endpoint</li>
+                    <li>Developing gait analysis models using <span class="highlight">PyTorch</span> for biomechanical assessment; collaborating with firmware team to optimize sensor data collection for model training</li>
+                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, integrating data preprocessing via <span class="highlight">pandas</span> and ensemble model (Random Forest via <span class="highlight">scikit-learn</span>, gradient boosting via <span class="highlight">XGBoost</span>), reducing prediction error by <span class="highlight">54%</span> (7.0% to 3.2% MAPE, measured via 5-fold cross-validation)</li>
+                    <li>Designed REST API using <span class="highlight">FastAPI</span> with <span class="highlight">JavaScript</span> integration layer; containerized via <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Reduced end-to-end latency from <span class="highlight">800ms to 185ms (4.3x)</span> by migrating to async database client and loading ML model at startup via lifespan hooks</li>
+                    <li>Optimized data fetching logic in <span class="highlight">JavaScript</span> dashboard to load only selected trials on-demand, reducing network traffic by <span class="highlight">99.4%</span> and improving page load times by <span class="highlight">68.5%</span></li>
                     <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3 hours for 50 data points</span> to <span class="highlight">under 3 minutes for 170+ data points</span></li>
                 </ul>
             </div>
@@ -532,12 +534,11 @@
                             <span class="skills-tag">pandas</span>
                         </div>
                     </div>
-                    <div class="item-date">May 2025 – Dec. 2025</div>
+                    <div class="item-date">May 2025 – Aug. 2025</div>
                 </div>
                 <ul class="achievements">
-                    <li>Replaced fragmented Google Sheets with a centralized <span class="highlight">PostgreSQL</span> database, saving the business owner <span class="highlight">10+ hours/week</span> on manual data entry and reducing data entry errors by <span class="highlight">37%</span></li>
-                    <li>Designed and deployed a full-stack <span class="highlight">CRUD</span> application with <span class="highlight">SQL-based ETL pipelines</span> for real-time sales tracking, inventory management, and automated reporting</li>
-                    <li>Built an interactive dashboard with <span class="highlight">15+ real-time data views</span>, including sales trends, stock alerts, and top-selling products, driving data-informed decisions and contributing to a <span class="highlight">47% profit growth</span> in Q2 vs. Q1 2025 and <span class="highlight">21% profit growth</span> in Q3 vs. Q2 2025</li>
+                    <li>Designed a <span class="highlight">PostgreSQL</span> database to replace fragmented Google Sheets, saving the business owner <span class="highlight">10+ hours/week</span> on manual data entry and reducing data entry errors by <span class="highlight">37%</span></li>
+                    <li>Built an interactive dashboard with <span class="highlight">15+ real-time data views</span> including sales trends and inventory alerts, driving data-informed decisions and contributing to a <span class="highlight">47% profit growth</span> in Q2 vs. Q1 2025 and <span class="highlight">21% profit growth</span> in Q3 vs. Q2 2025</li>
                 </ul>
             </div>
 
@@ -550,7 +551,7 @@
                     <div class="item-date">Sep. 2021 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Taught <span class="highlight">15+ distinct math courses</span>, including Real Analysis, Abstract Algebra, Calculus I & II, Linear Algebra I & II; led weekly tutorials of <span class="highlight">40+ students</span> and graded coursework for <span class="highlight">5500+ students</span> across 14+ semesters at two universities</li>
+                    <li>Taught <span class="highlight">15+ distinct math courses</span>, including Real Analysis, Abstract Algebra, Calculus I & II, Linear Algebra I & II; led weekly tutorials of <span class="highlight">40+ students</span> and graded coursework for <span class="highlight">6000+ students</span> across 14+ semesters at two universities</li>
                 </ul>
             </div>
         </section>
@@ -583,37 +584,18 @@
             <div class="project-item">
                 <div class="item-header">
                     <div>
-                        <div class="item-title">Alzheimer's Cognitive Trajectory Modeling</div>
-                        <div class="item-subtitle">
-                            <span class="skills-tag">R</span>
-                            <span class="skills-tag">RStudio</span>
-                            <span class="skills-tag">Git</span>
-                        </div>
-                    </div>
-                </div>
-                <ul class="achievements">
-                    <li>Modeled cognitive decline trajectories from <span class="highlight">350+ longitudinal observations</span> using mixed-effects spline models in R; improved model fit (conditional <span class="highlight">R² from 0.73 to 0.82</span>)</li>
-                    <li>Found that socioeconomic status boosts baseline cognition but is linked to faster decline over time through significant interactions with age and brain volume (<span class="highlight">p-values < 0.002</span>)</li>
-                </ul>
-            </div>
-
-            <div class="project-item">
-                <div class="item-header">
-                    <div>
                         <div class="item-title">Cloud Resume</div>
                         <div class="item-subtitle">
                             <span class="skills-tag">Python</span>
                             <span class="skills-tag">Flask</span>
                             <span class="skills-tag">AWS</span>
-                            <span class="skills-tag">Git</span>
                             <span class="skills-tag">SQL</span>
                             <span class="skills-tag">HTML/CSS</span>
                         </div>
                     </div>
                 </div>
                 <ul class="achievements">
-                    <li>Developed and deployed a <span class="highlight">Flask web application</span> on <span class="highlight">AWS Elastic Beanstalk</span> with <span class="highlight">RDS</span> backend and automated <span class="highlight">CI/CD via GitHub Actions</span></li>
-                    <li>Designed a responsive <span class="highlight">HTML/CSS interface</span>, enabling users to view a live visitor counter, download a PDF version of the resume, and explore daily visit trends with month/year filters powered by <span class="highlight">SQL aggregation queries</span></li>
+                    <li>Built and deployed a <span class="highlight">Flask</span> web application on <span class="highlight">AWS Elastic Beanstalk</span> with <span class="highlight">SQL</span> database backend, responsive <span class="highlight">HTML/CSS</span> frontend and automated <span class="highlight">CI/CD</span> pipeline via <span class="highlight">GitHub Actions</span></li>
                 </ul>
             </div>
         </section>
@@ -627,7 +609,7 @@
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Libraries & Frameworks</div>
-                    <div class="skill-list">scikit-learn, pandas, NumPy, Matplotlib, NLTK, Flask, XGBoost</div>
+                    <div class="skill-list">scikit-learn, XGBoost, PyTorch, pandas, NumPy, Matplotlib, Flask, FastAPI</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Tools & Platforms</div>
@@ -635,7 +617,7 @@
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Databases & Cloud</div>
-                    <div class="skill-list">PostgreSQL, AWS, Microsoft Azure</div>
+                    <div class="skill-list">PostgreSQL, GCP (Google Cloud Platform), AWS (Amazon Web Services), Microsoft Azure</div>
                 </div>
             </div>
         </section>
