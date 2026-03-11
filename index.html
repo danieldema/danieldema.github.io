@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Website - Home</title>
+    <title>Daniel Dema</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e4bc8f6f00.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="transition transition-1 is-active"></div>
+    <div class="page">
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Daniel Dema</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="personal.html">Personal</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="profile-image">
-                <img src="images/me1.png" alt="Daniel Dema">
-                <div class="social-links">
-                    <a href="mailto:danieldema42@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/danieldema/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/danieldema"><i class="fa-brands fa-github"></i></a>
+        <section class="hero">
+            <img class="hero-photo" src="images/me1.png" alt="Daniel Dema">
+            <div class="hero-body">
+                <div class="hero-name">Daniel Dema</div>
+                <p class="hero-tagline">Engineering Intern. Master's student in Data Science at York University.</p>
+                <div class="hero-links">
+                    <a href="resume.html"><i class="fa-regular fa-file-lines"></i> resume</a>
+                    <a href="mailto:danieldema42@gmail.com"><i class="fa-regular fa-envelope"></i> email</a>
+                    <a href="https://www.linkedin.com/in/danieldema/"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                    <a href="https://github.com/danieldema"><i class="fa-brands fa-github"></i> github</a>
                 </div>
             </div>
-            <div class="hero-text">
-                <h1>Hello!</h1>
-                <p>I'm a master's student in data science at York University. I enjoy using math and code to solve real-world problems.</p>
-                <a href="resume.html" class="cta-button">View My Resume</a>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">Projects</div>
+            <div class="project-list">
+
+                <div class="project-card">
+                    <div class="project-title">
+                        Soil Moisture Detection System
+                        <span class="project-status">// in progress</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Building full-stack deployment: FastAPI REST API with SQLAlchemy ORM, Alembic migrations, and PostgreSQL on Railway; React frontend and model serving pipeline in progress</li>
+                        <li>Compared four pretrained PyTorch vision backbones as feature extractors for soil moisture regression; ViT + SVR achieved 8.6% MAE improvement over published baseline</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">
+                        <a href="https://github.com/danieldema/appendicitis_analysis">Appendicitis Prediction System</a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Azure</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Random Forest model achieving 97% accuracy with 3% false negative rate for pediatric appendicitis diagnosis</li>
+                        <li>Built interactive HTML/CSS front end linked to a Flask backend; containerized with Docker and deployed on Microsoft Azure</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">
+                        <a href="https://github.com/danieldema/MATH6642/tree/main/final_project">Predictive Inference for Cognitive Decline</a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">R</span>
+                        <span class="tag">Mixed Effects Models</span>
+                        <span class="tag">Longitudinal Analysis</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Longitudinal analysis of the OASIS MRI dataset using mixed effects models to identify biological and socioeconomic predictors of cognitive decline</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
-    </main>
+
+    </div>
 
     <footer class="footer">
-        <div>Last updated: 28-02-2026</div>
+        <span>Last updated: 11-03-2026</span>
+        <a href="resume.html">View Resume &rarr;</a>
     </footer>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
-    <script src="scripts.js"></script>
 </body>
 </html>

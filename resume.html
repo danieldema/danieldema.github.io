@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Dema - Resume</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,358 +12,290 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg: #ffffff;
+            --text: #0a0a0a;
+            --text-muted: #444444;
+            --border: #222222;
+            --border-light: #dddddd;
+            --accent: #0a2463;
+            --font-mono: 'Courier New', Courier, monospace;
+            --font-serif: 'Georgia', serif;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.4;
-            color: #333;
-            background: linear-gradient(135deg, #fafafa 0%, #f5f7fa 100%);
+            font-family: var(--font-serif);
+            line-height: 1.55;
+            color: var(--text);
+            background: var(--bg);
             min-height: 100vh;
-            padding: 15px;
+            padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06);
-            border-radius: 12px;
-            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-top: 3px solid var(--accent);
             position: relative;
-            border: 1px solid #e5e5e5;
-            transition: box-shadow 0.3s ease;
         }
 
         .header {
-            background: white;
-            color: #333;
-            padding: 40px 30px 30px;
+            padding: 2.5rem 2.5rem 2rem;
             text-align: center;
             position: relative;
-            border-bottom: 1px solid #eee;
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 1;
+            border-bottom: 1px solid var(--border-light);
         }
 
         .name {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 2.6em;
-            font-weight: 300;
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
-            color: #1a1a1a;
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: var(--accent);
+            margin-bottom: 1rem;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 25px;
-            margin-top: 15px;
-            flex-wrap: nowrap;
-            width: 100%;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
         .contact-item {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.9em;
-            transition: transform 0.3s ease;
+            font-family: var(--font-mono);
+            font-size: 0.78em;
+            color: var(--text-muted);
             white-space: nowrap;
-            flex-shrink: 0;
-            color: #666;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-1px);
-            color: #333;
         }
 
         .contact-item a {
-            color: #0366d6;
+            color: var(--text-muted);
             text-decoration: none;
-            transition: color 0.3s ease;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 1px;
         }
 
         .contact-item a:hover {
-            color: #0253cc;
-            text-decoration: underline;
-            transform: translateY(-1px);
-        }
-
-        .contact-item i {
-            color: #666;
-            font-size: 0.9em;
+            color: var(--accent);
+            border-color: var(--accent);
         }
 
         .main-content {
-            padding: 30px;
+            padding: 2rem 2.5rem;
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 2.25rem;
         }
 
         .section-title {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 1.6em;
-            color: #222;
-            margin-bottom: 18px;
-            position: relative;
-            padding-bottom: 10px;
-            font-weight: 400;
-            border-bottom: 2px solid #0366d6;
-            letter-spacing: 0.3px;
+            font-family: var(--font-mono);
+            font-size: 0.72em;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
         }
 
         .education-item {
-            background: white;
-            border-left: 2px solid #ddd;
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            border-radius: 0 6px 6px 0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
+            padding: 0.6rem 0;
+            margin-bottom: 0.75rem;
+            border-left: 2px solid var(--border-light);
+            padding-left: 1rem;
+            transition: border-color 0.15s ease;
         }
 
         .experience-item, .project-item {
-            background: white;
-            border-left: 2px solid #ddd;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 0 6px 6px 0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            transform: translateX(0);
+            padding: 0.75rem 0 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border-left: 2px solid var(--border-light);
+            transition: border-color 0.15s ease;
         }
 
         .education-item:hover, .experience-item:hover, .project-item:hover {
-            border-left-color: #0366d6;
-            box-shadow: 0 4px 16px rgba(3, 102, 214, 0.15), 0 2px 8px rgba(0,0,0,0.1);
-            transform: translateX(4px);
-            background: #fafbfc;
+            border-left-color: var(--accent);
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 10px;
+            margin-bottom: 0.4rem;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 0.5rem;
         }
 
         .item-title {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 1.15em;
-            font-weight: 400;
-            color: #222;
+            font-family: var(--font-mono);
+            font-size: 0.9em;
+            font-weight: 600;
+            color: var(--text);
         }
 
         .item-date {
-            color: #718096;
-            font-weight: 400;
+            font-family: var(--font-mono);
+            color: var(--text-muted);
             white-space: nowrap;
-            font-size: 0.85em;
-            letter-spacing: 0.2px;
+            font-size: 0.78em;
         }
 
         .item-subtitle {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: #666;
+            font-family: var(--font-serif);
+            color: var(--text-muted);
             font-style: italic;
-            margin-bottom: 10px;
-            font-size: 0.95em;
+            margin-bottom: 0.6rem;
+            font-size: 0.88em;
         }
 
         .item-header + .item-subtitle {
-            margin-top: -5px;
+            margin-top: -0.2rem;
         }
 
         .skills-tag {
-            background: #edf2f7;
-            color: #2d3748;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.8em;
-            font-weight: 500;
-            border: 1px solid #cbd5e0;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-            transition: all 0.2s ease;
-        }
-
-        .skills-tag:hover {
-            background: #e2e8f0;
-            border-color: #a0aec0;
-            transform: translateY(-1px);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: var(--font-mono);
+            font-size: 0.7em;
+            color: var(--text-muted);
+            border: 1px solid var(--border-light);
+            padding: 1px 6px;
+            background: var(--bg);
         }
 
         .achievements {
             list-style: none;
-            margin-top: 8px;
+            margin-top: 0.5rem;
         }
 
         .achievements li {
-            font-family: 'Georgia', serif;
-            margin-bottom: 8px;
-            padding-left: 16px;
+            font-family: var(--font-serif);
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
             position: relative;
-            line-height: 1.5;
-            font-size: 0.95em;
+            line-height: 1.55;
+            font-size: 0.9em;
+            color: var(--text);
         }
 
         .achievements li::before {
-            content: '\2022';
+            content: '\2013';
             position: absolute;
             left: 0;
-            top: 0.1em;
-            color: #333;
-            font-weight: bold;
-            font-size: 1.1em;
+            top: 0;
+            color: var(--text-muted);
         }
 
         .technical-skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            gap: 1rem;
         }
 
         .skill-category {
-            background: #f6f8fa;
-            padding: 15px;
-            border-radius: 6px;
-            border: 1px solid #e1e4e8;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-            border: 1px solid #cbd5e0;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-light);
+            background: #ffffff;
         }
 
         .skill-title {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-weight: 400;
-            color: #222;
-            margin-bottom: 6px;
-            font-size: 1em;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 0.75em;
+            color: var(--text);
+            margin-bottom: 0.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
         }
 
         .skill-list {
-            color: #586069;
+            font-family: var(--font-serif);
+            color: var(--text-muted);
             line-height: 1.5;
-            font-size: 0.9em;
+            font-size: 0.88em;
         }
 
         .highlight {
-            background: #e8f4fd;
-            color: #333;
-            padding: 2px 5px;
-            border-radius: 4px;
-            font-weight: 500;
+            font-weight: bold;
+            color: var(--text);
         }
 
         .pdf-download {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: var(--font-mono);
             position: absolute;
-            top: 20px;
-            right: 20px;
-            background: #0366d6;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 6px;
+            top: 1.25rem;
+            right: 1.25rem;
+            color: var(--text-muted);
             text-decoration: none;
-            font-weight: 400;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 0.75em;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 1px;
             z-index: 10;
-            font-size: 0.9em;
+            transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .pdf-download:hover {
-            background: #0253cc;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(3, 102, 214, 0.4);
+            color: var(--accent);
+            border-color: var(--accent);
         }
 
         .back-link {
-            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: var(--font-mono);
             position: absolute;
-            top: 20px;
-            left: 20px;
-            color: #586069;
+            top: 1.25rem;
+            left: 1.25rem;
+            color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.9em;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            font-size: 0.75em;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 1px;
             z-index: 10;
-            transition: color 0.3s ease;
+            transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .back-link:hover {
-            color: #0366d6;
+            color: var(--accent);
+            border-color: var(--accent);
         }
 
         @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 6px;
+            body {
+                padding: 0.5rem;
             }
 
             .header {
-                padding: 40px 20px 30px;
+                padding: 3rem 1.5rem 1.5rem;
             }
 
             .name {
-                font-size: 2.2em;
+                font-size: 1.5rem;
             }
 
             .contact-info {
-                gap: 15px;
-                overflow-x: auto;
-                justify-content: center;
-                padding: 0 20px;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-            }
-
-            .contact-info::-webkit-scrollbar {
-                display: none;
-            }
-
-            .contact-item {
-                font-size: 0.9em;
+                gap: 0.75rem;
             }
 
             .pdf-download {
                 position: fixed;
-                top: 10px;
-                right: 10px;
-                padding: 8px 15px;
-                font-size: 0.85em;
+                top: 0.5rem;
+                right: 0.5rem;
             }
 
             .back-link {
                 position: fixed;
-                top: 10px;
-                left: 10px;
+                top: 0.5rem;
+                left: 0.5rem;
             }
 
             .main-content {
-                padding: 30px 25px;
+                padding: 1.5rem;
             }
 
             .item-header {
                 flex-direction: column;
-                align-items: flex-start;
             }
 
             .technical-skills {
@@ -377,25 +307,12 @@
             body {
                 background: white !important;
                 padding: 0;
-                -webkit-print-color-adjust: exact;
-                color-adjust: exact;
             }
 
             .container {
-                box-shadow: none !important;
-                border-radius: 0;
                 border: none;
                 max-width: none;
                 margin: 0;
-            }
-
-            .header {
-                border-bottom: 1px solid #ccc;
-                padding: 30px 20px 20px;
-            }
-
-            .main-content {
-                padding: 20px;
             }
 
             .back-link,
@@ -404,8 +321,6 @@
             }
 
             .section-title {
-                color: #222 !important;
-                border-bottom-color: #0366d6 !important;
                 break-after: avoid;
             }
 
@@ -413,22 +328,10 @@
             .project-item,
             .education-item {
                 break-inside: avoid;
-                margin-bottom: 12px;
             }
 
             .achievements {
                 break-inside: avoid;
-            }
-
-            .highlight {
-                background: #e8f4fd !important;
-                -webkit-print-color-adjust: exact;
-            }
-
-            .skills-tag {
-                background: #edf2f7 !important;
-                border-color: #cbd5e0 !important;
-                -webkit-print-color-adjust: exact;
             }
         }
     </style>
@@ -436,33 +339,16 @@
 <body>
     <div class="container">
     <header class="header">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-left"></i> Back
-        </a>
-        <a href="docs/Daniel_Dema_Resume.pdf" class="pdf-download" download>
-            <i class="fas fa-download"></i>
-            Download PDF
-        </a>
+        <a href="index.html" class="back-link">&larr; back</a>
+        <a href="docs/Daniel_Dema_Resume.pdf" class="pdf-download" download>download pdf</a>
         <div class="header-content">
             <h1 class="name">DANIEL DEMA</h1>
 
             <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>416-554-8453</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:danieldema42@gmail.com">danieldema42@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/danieldema/">linkedin.com/in/danieldema</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/danieldema">github.com/danieldema</a>
-                </div>
+                <div class="contact-item">416-554-8453</div>
+                <div class="contact-item"><a href="mailto:danieldema42@gmail.com">danieldema42@gmail.com</a></div>
+                <div class="contact-item"><a href="https://www.linkedin.com/in/danieldema/">linkedin.com/in/danieldema</a></div>
+                <div class="contact-item"><a href="https://github.com/danieldema">github.com/danieldema</a></div>
             </div>
         </div>
     </header>
@@ -511,34 +397,33 @@
                             <span class="skills-tag">Docker</span>
                             <span class="skills-tag">GCP</span>
                         </div>
+
                     </div>
                     <div class="item-date">Jan. 2026 – Present</div>
                 </div>
                 <ul class="achievements">
                     <li>Developing gait analysis models using <span class="highlight">PyTorch</span> for biomechanical assessment; collaborating with firmware team to optimize sensor data collection for model training</li>
                     <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, integrating data preprocessing via <span class="highlight">pandas</span> and ensemble model (Random Forest via <span class="highlight">scikit-learn</span>, gradient boosting via <span class="highlight">XGBoost</span>), reducing prediction error by <span class="highlight">54%</span> (7.0% to 3.2% MAPE, measured via 5-fold cross-validation)</li>
+                    <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP Cloud Run</span> service into dedicated preprocessing and inference microservices; offloaded CPU-bound signal processing to an isolated thread pool, improving throughput by <span class="highlight">53%</span> and reducing <span class="highlight">P95 latency by 60%</span> validated via Locust load testing</li>
                     <li>Designed REST API using <span class="highlight">FastAPI</span> with <span class="highlight">JavaScript</span> integration layer; containerized via <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Reduced end-to-end latency from <span class="highlight">800ms to 185ms (4.3x)</span> by migrating to async database client and loading ML model at startup via lifespan hooks</li>
                     <li>Optimized data fetching logic in <span class="highlight">JavaScript</span> dashboard to load only selected trials on-demand, reducing network traffic by <span class="highlight">99.4%</span> and improving page load times by <span class="highlight">68.5%</span></li>
-                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3 hours for 50 data points</span> to <span class="highlight">under 3 minutes for 170+ data points</span></li>
+                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 minutes</span>; improved API endpoint performance via <span class="highlight">NumPy</span> vectorization, reducing average response latency by <span class="highlight">60%</span></li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="item-header">
                     <div>
-                        <div class="item-title">Freelance Data Engineer</div>
+                        <div class="item-title">Freelance Software Developer</div>
                         <div class="item-subtitle">
                             Superior Audio │
                             <span class="skills-tag">PostgreSQL</span>
-                            <span class="skills-tag">Python</span>
-                            <span class="skills-tag">pandas</span>
                         </div>
                     </div>
                     <div class="item-date">May 2025 – Aug. 2025</div>
                 </div>
                 <ul class="achievements">
-                    <li>Designed a <span class="highlight">PostgreSQL</span> database to replace fragmented Google Sheets, saving the business owner <span class="highlight">10+ hours/week</span> on manual data entry and reducing data entry errors by <span class="highlight">37%</span></li>
-                    <li>Built an interactive dashboard with <span class="highlight">15+ real-time data views</span> including sales trends and inventory alerts, driving data-informed decisions and contributing to a <span class="highlight">47% profit growth</span> in Q2 vs. Q1 2025 and <span class="highlight">21% profit growth</span> in Q3 vs. Q2 2025</li>
+                    <li>Designed a <span class="highlight">PostgreSQL</span> database schema to replace fragmented Google Sheets; built an interactive dashboard with <span class="highlight">15+ data views</span>, enabling real-time monitoring of sales trends and inventory</li>
                 </ul>
             </div>
 
@@ -562,6 +447,26 @@
             <div class="project-item">
                 <div class="item-header">
                     <div>
+                        <div class="item-title">Soil Moisture Detection System <em style="font-weight: 300; font-style: italic; font-size: 0.9em;">(In Progress)</em></div>
+                        <div class="item-subtitle">
+                            <span class="skills-tag">Python</span>
+                            <span class="skills-tag">PyTorch</span>
+                            <span class="skills-tag">FastAPI</span>
+                            <span class="skills-tag">PostgreSQL</span>
+                            <span class="skills-tag">JavaScript</span>
+                            <span class="skills-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="achievements">
+                    <li>Building full-stack deployment: <span class="highlight">FastAPI</span> REST API with SQLAlchemy ORM, Alembic migrations, and <span class="highlight">PostgreSQL</span> on Railway; <span class="highlight">React</span> frontend and model serving pipeline in progress</li>
+                    <li>Compared four pretrained <span class="highlight">PyTorch</span> vision backbones as feature extractors for soil moisture regression; used ViT + SVR to achieve <span class="highlight">8.6% MAE improvement</span> over published baseline</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
                         <div class="item-title">Appendicitis Prediction System</div>
                         <div class="item-subtitle">
                             <span class="skills-tag">Python</span>
@@ -581,23 +486,6 @@
                 </ul>
             </div>
 
-            <div class="project-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">Cloud Resume</div>
-                        <div class="item-subtitle">
-                            <span class="skills-tag">Python</span>
-                            <span class="skills-tag">Flask</span>
-                            <span class="skills-tag">AWS</span>
-                            <span class="skills-tag">SQL</span>
-                            <span class="skills-tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-                <ul class="achievements">
-                    <li>Built and deployed a <span class="highlight">Flask</span> web application on <span class="highlight">AWS Elastic Beanstalk</span> with <span class="highlight">SQL</span> database backend, responsive <span class="highlight">HTML/CSS</span> frontend and automated <span class="highlight">CI/CD</span> pipeline via <span class="highlight">GitHub Actions</span></li>
-                </ul>
-            </div>
         </section>
 
         <section class="section">
