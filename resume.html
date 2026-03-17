@@ -391,7 +391,6 @@
                             <span class="skills-tag">Python</span>
                             <span class="skills-tag">scikit-learn</span>
                             <span class="skills-tag">XGBoost</span>
-                            <span class="skills-tag">PyTorch</span>
                             <span class="skills-tag">FastAPI</span>
                             <span class="skills-tag">JavaScript</span>
                             <span class="skills-tag">Docker</span>
@@ -402,10 +401,10 @@
                     <div class="item-date">Jan. 2026 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Developing gait analysis models using <span class="highlight">PyTorch</span> for biomechanical assessment; collaborating with firmware team to optimize sensor data collection for model training</li>
-                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, integrating data preprocessing via <span class="highlight">pandas</span> and ensemble model (Random Forest via <span class="highlight">scikit-learn</span>, gradient boosting via <span class="highlight">XGBoost</span>), reducing prediction error by <span class="highlight">54%</span> (7.0% to 3.2% MAPE, measured via 5-fold cross-validation)</li>
+                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, integrating data preprocessing via <span class="highlight">pandas</span> and ensemble model (Random Forest via <span class="highlight">scikit-learn</span>, gradient boosting via <span class="highlight">XGBoost</span>), reducing prediction error by <span class="highlight">54%</span> over a polynomial regression baseline</li>
                     <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP Cloud Run</span> service into dedicated preprocessing and inference microservices; offloaded CPU-bound signal processing to an isolated thread pool, improving throughput by <span class="highlight">53%</span> and reducing <span class="highlight">P95 latency by 60%</span> validated via Locust load testing</li>
-                    <li>Designed REST API using <span class="highlight">FastAPI</span> with <span class="highlight">JavaScript</span> integration layer; containerized via <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Reduced end-to-end latency from <span class="highlight">800ms to 185ms (4.3x)</span> by migrating to async database client and loading ML model at startup via lifespan hooks</li>
+                    <li>Migrated <span class="highlight">AWS</span>-hosted <span class="highlight">PostgreSQL</span> dataset to <span class="highlight">GCP Cloud Storage</span>, eliminating cross-cloud network hop to achieve <span class="highlight">22% median latency reduction</span>; replaced row-by-row database updates with a single CSV upload, reducing user-facing data sync time by <span class="highlight">29%</span></li>
+                    <li>Designed REST API using <span class="highlight">FastAPI</span> with <span class="highlight">JavaScript</span> integration layer; containerized via <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Reduced end-to-end latency by <span class="highlight">4.3x</span> by migrating to async database client and loading ML model at startup</li>
                     <li>Optimized data fetching logic in <span class="highlight">JavaScript</span> dashboard to load only selected trials on-demand, reducing network traffic by <span class="highlight">99.4%</span> and improving page load times by <span class="highlight">68.5%</span></li>
                     <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 minutes</span>; improved API endpoint performance via <span class="highlight">NumPy</span> vectorization, reducing average response latency by <span class="highlight">60%</span></li>
                 </ul>
