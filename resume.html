@@ -393,6 +393,7 @@
                             <span class="skills-tag">XGBoost</span>
                             <span class="skills-tag">FastAPI</span>
                             <span class="skills-tag">JavaScript</span>
+                            <span class="skills-tag">React</span>
                             <span class="skills-tag">Docker</span>
                             <span class="skills-tag">GCP</span>
                         </div>
@@ -401,28 +402,12 @@
                     <div class="item-date">Jan. 2026 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, integrating data preprocessing via <span class="highlight">pandas</span> and ensemble model (Random Forest via <span class="highlight">scikit-learn</span>, gradient boosting via <span class="highlight">XGBoost</span>), reducing prediction error by <span class="highlight">54%</span> over a polynomial regression baseline</li>
-                    <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP Cloud Run</span> service into dedicated preprocessing and inference microservices; offloaded CPU-bound signal processing to an isolated thread pool, improving throughput by <span class="highlight">53%</span> and reducing <span class="highlight">P95 latency by 60%</span> validated via Locust load testing</li>
-                    <li>Migrated <span class="highlight">AWS</span>-hosted <span class="highlight">PostgreSQL</span> dataset to <span class="highlight">GCP Cloud Storage</span>, eliminating cross-cloud network hop to achieve <span class="highlight">22% median latency reduction</span>; replaced row-by-row database updates with a single CSV upload, reducing user-facing data sync time by <span class="highlight">29%</span></li>
-                    <li>Designed REST API using <span class="highlight">FastAPI</span> with <span class="highlight">JavaScript</span> integration layer; containerized via <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Reduced end-to-end latency by <span class="highlight">4.3x</span> by migrating to async database client and loading ML model at startup</li>
-                    <li>Optimized data fetching logic in <span class="highlight">JavaScript</span> dashboard to load only selected trials on-demand, reducing network traffic by <span class="highlight">99.4%</span> and improving page load times by <span class="highlight">68.5%</span></li>
-                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 minutes</span>; improved API endpoint performance via <span class="highlight">NumPy</span> vectorization, reducing average response latency by <span class="highlight">60%</span></li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">Freelance Software Developer</div>
-                        <div class="item-subtitle">
-                            Superior Audio │
-                            <span class="skills-tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="item-date">May 2025 – Aug. 2025</div>
-                </div>
-                <ul class="achievements">
-                    <li>Designed a <span class="highlight">PostgreSQL</span> database schema to replace fragmented Google Sheets; built an interactive dashboard with <span class="highlight">15+ data views</span>, enabling real-time monitoring of sales trends and inventory</li>
+                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for a cardiopulmonary monitoring device using <span class="highlight">scikit-learn</span> and <span class="highlight">XGBoost</span>, reducing prediction error by <span class="highlight">54%</span> over a polynomial regression baseline</li>
+                    <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP Cloud Run</span> service into preprocessing and inference microservices; improved throughput by <span class="highlight">53%</span> and reduced <span class="highlight">P95 latency by 60%</span></li>
+                    <li>Migrated <span class="highlight">AWS</span>-hosted <span class="highlight">PostgreSQL</span> to <span class="highlight">Google Cloud Storage</span>, eliminating cross-cloud overhead and replacing row-by-row updates with CSV uploads, cutting median latency by <span class="highlight">22%</span> and data sync time by <span class="highlight">29%</span></li>
+                    <li>Designed <span class="highlight">FastAPI</span> REST API and integrated it into a <span class="highlight">JavaScript</span> orchestration script; containerized API with <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Migrated to async database client, reducing end-to-end latency by <span class="highlight">4.3x</span></li>
+                    <li>Refactored <span class="highlight">React</span> dashboard to load trials on-demand via <span class="highlight">GCP</span> signed URLs, reducing network traffic by <span class="highlight">99.4%</span> and cutting file download time from <span class="highlight">10s</span> to <span class="highlight">&lt;1s</span></li>
+                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 min</span>; applied <span class="highlight">NumPy</span> vectorization to cut average API response latency by <span class="highlight">60%</span></li>
                 </ul>
             </div>
 
@@ -492,11 +477,11 @@
             <div class="technical-skills">
                 <div class="skill-category">
                     <div class="skill-title">Languages</div>
-                    <div class="skill-list">Python, SQL, R, HTML/CSS, JavaScript/TypeScript</div>
+                    <div class="skill-list">Python, JavaScript/TypeScript, SQL, R, HTML/CSS</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Libraries & Frameworks</div>
-                    <div class="skill-list">scikit-learn, XGBoost, PyTorch, pandas, NumPy, Matplotlib, Flask, FastAPI</div>
+                    <div class="skill-list">scikit-learn, XGBoost, PyTorch, pandas, NumPy, FastAPI, Flask, React</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Tools & Platforms</div>
