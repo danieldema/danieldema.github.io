@@ -361,11 +361,10 @@
                 <div class="item-header">
                     <div>
                         <div class="item-title">York University</div>
-                        <div class="item-subtitle">Master of Arts in Data Science <span style="font-style: normal;">| <span class="highlight">GPA: 3.77</span></span></div>
+                        <div class="item-subtitle">Master of Arts in Data Science</div>
                     </div>
                     <div class="item-date">Sep. 2024 – Apr. 2027 (Expected)</div>
                 </div>
-                <div class="item-subtitle">Relevant Coursework: Statistical Data Science, Applied Statistics, Longitudinal Data Analysis</div>
             </div>
 
             <div class="education-item">
@@ -389,11 +388,12 @@
                         <div class="item-subtitle">
                             Vitruvius Innovation │
                             <span class="skills-tag">Python</span>
-                            <span class="skills-tag">scikit-learn</span>
-                            <span class="skills-tag">XGBoost</span>
-                            <span class="skills-tag">FastAPI</span>
                             <span class="skills-tag">JavaScript</span>
+                            <span class="skills-tag">Go</span>
+                            <span class="skills-tag">scikit-learn</span>
+                            <span class="skills-tag">FastAPI</span>
                             <span class="skills-tag">React</span>
+                            <span class="skills-tag">PostgreSQL</span>
                             <span class="skills-tag">Docker</span>
                             <span class="skills-tag">GCP</span>
                         </div>
@@ -402,12 +402,11 @@
                     <div class="item-date">Jan. 2026 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for a cardiopulmonary monitoring device using <span class="highlight">scikit-learn</span> and <span class="highlight">XGBoost</span>, reducing prediction error by <span class="highlight">54%</span> over a polynomial regression baseline</li>
-                    <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP Cloud Run</span> service into preprocessing and inference microservices; improved throughput by <span class="highlight">53%</span> and reduced <span class="highlight">P95 latency by 60%</span></li>
-                    <li>Migrated <span class="highlight">AWS</span>-hosted <span class="highlight">PostgreSQL</span> to <span class="highlight">Google Cloud Storage</span>, eliminating cross-cloud overhead and replacing row-by-row updates with CSV uploads, cutting median latency by <span class="highlight">22%</span> and data sync time by <span class="highlight">29%</span></li>
-                    <li>Designed <span class="highlight">FastAPI</span> REST API and integrated it into a <span class="highlight">JavaScript</span> orchestration script; containerized API with <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span>. Migrated to async database client, reducing end-to-end latency by <span class="highlight">4.3x</span></li>
-                    <li>Refactored <span class="highlight">React</span> dashboard to load trials on-demand via <span class="highlight">GCP</span> signed URLs, reducing network traffic by <span class="highlight">99.4%</span> and cutting file download time from <span class="highlight">10s</span> to <span class="highlight">&lt;1s</span></li>
-                    <li>Automated manual Excel calculations via <span class="highlight">Python script</span>, reducing processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 min</span>; applied <span class="highlight">NumPy</span> vectorization to cut average API response latency by <span class="highlight">60%</span></li>
+                    <li>Built end-to-end <span class="highlight">ML pipeline</span> for cardiopulmonary monitoring device, reducing MAPE by <span class="highlight">54%</span> over baseline model; designed <span class="highlight">REST API</span> serving ML pipeline, containerized API with <span class="highlight">Docker</span> and deployed to <span class="highlight">GCP</span></li>
+                    <li>Scaled API to handle <span class="highlight">150+ concurrent users</span> by splitting monolithic <span class="highlight">GCP</span> service into microservices with <span class="highlight">CI/CD pipelines</span>; improved throughput by <span class="highlight">53%</span> and reduced <span class="highlight">P95 latency by 60%</span></li>
+                    <li>Architected <span class="highlight">Go + GCP</span> backend for clinical wellness platform, replacing <span class="highlight">Supabase BaaS</span>; reduced mean user data read latency by <span class="highlight">78%</span> and eliminated auth failure rate (<span class="highlight">14% to 0%</span>) under concurrent load</li>
+                    <li>Refactored <span class="highlight">React</span> dashboard, cutting file download time from <span class="highlight">10s</span> to <span class="highlight">&lt;1s</span> using signed URLs</li>
+                    <li>Automated Excel calculations, cutting processing time from <span class="highlight">3+ hours</span> to <span class="highlight">&lt;3 min</span> using <span class="highlight">Python</span> signal processing script</li>
                 </ul>
             </div>
 
@@ -431,42 +430,40 @@
             <div class="project-item">
                 <div class="item-header">
                     <div>
-                        <div class="item-title">Soil Moisture Detection System <em style="font-weight: 300; font-style: italic; font-size: 0.9em;">(In Progress)</em></div>
+                        <div class="item-title">Soil Moisture Analyzer</div>
                         <div class="item-subtitle">
                             <span class="skills-tag">Python</span>
                             <span class="skills-tag">PyTorch</span>
                             <span class="skills-tag">FastAPI</span>
                             <span class="skills-tag">PostgreSQL</span>
-                            <span class="skills-tag">JavaScript</span>
-                            <span class="skills-tag">React</span>
+                            <span class="skills-tag">TypeScript</span>
+                            <span class="skills-tag">Next.js</span>
+                            <span class="skills-tag">Docker</span>
                         </div>
                     </div>
                 </div>
                 <ul class="achievements">
-                    <li>Building full-stack deployment: <span class="highlight">FastAPI</span> REST API with SQLAlchemy ORM, Alembic migrations, and <span class="highlight">PostgreSQL</span> on Railway; <span class="highlight">React</span> frontend and model serving pipeline in progress</li>
-                    <li>Compared four pretrained <span class="highlight">PyTorch</span> vision backbones as feature extractors for soil moisture regression; used ViT + SVR to achieve <span class="highlight">8.6% MAE improvement</span> over published baseline</li>
+                    <li>Compared four <span class="highlight">PyTorch</span> vision models for soil moisture regression; used ViT + SVR (vision transformer with support vector regression) to achieve <span class="highlight">8.6% MAE improvement</span> over published baseline</li>
+                    <li>Built full-stack app with <span class="highlight">FastAPI</span> backend (JWT auth + ML pipeline), <span class="highlight">PostgreSQL</span> database, <span class="highlight">Next.js + TypeScript</span> frontend</li>
                 </ul>
             </div>
 
             <div class="project-item">
                 <div class="item-header">
                     <div>
-                        <div class="item-title">Appendicitis Prediction System</div>
+                        <div class="item-title">Resume Tailor <em style="font-weight: 300; font-style: italic; font-size: 0.9em;">(In Progress)</em></div>
                         <div class="item-subtitle">
-                            <span class="skills-tag">Python</span>
-                            <span class="skills-tag">scikit-learn</span>
-                            <span class="skills-tag">pandas</span>
-                            <span class="skills-tag">Flask</span>
-                            <span class="skills-tag">HTML/CSS</span>
+                            <span class="skills-tag">Java</span>
+                            <span class="skills-tag">Spring Boot</span>
+                            <span class="skills-tag">PostgreSQL</span>
+                            <span class="skills-tag">TypeScript</span>
+                            <span class="skills-tag">React</span>
                             <span class="skills-tag">Docker</span>
-                            <span class="skills-tag">Microsoft Azure</span>
-                            <span class="skills-tag">Git</span>
                         </div>
                     </div>
                 </div>
                 <ul class="achievements">
-                    <li>Developed and optimized a Random Forest model using <span class="highlight">scikit-learn</span>, applying cross-validation to achieve <span class="highlight">97% accuracy</span> with a low <span class="highlight">3% false negative rate</span> for appendicitis diagnosis based on symptoms and clinical signs</li>
-                    <li>Built an interactive <span class="highlight">HTML/CSS</span> front end for symptom input, linked to a <span class="highlight">Flask</span> backend for real-time predictions; containerized the app with <span class="highlight">Docker</span> and deployed it on <span class="highlight">Microsoft Azure</span></li>
+                    <li>Building an AI-powered resume tailoring tool integrating <span class="highlight">Gemini</span> for LLM-driven feedback and skills gap detection; <span class="highlight">Spring Boot</span> backend with JWT auth and PDF processing pipeline</li>
                 </ul>
             </div>
 
@@ -477,19 +474,23 @@
             <div class="technical-skills">
                 <div class="skill-category">
                     <div class="skill-title">Languages</div>
-                    <div class="skill-list">Python, JavaScript/TypeScript, SQL, R, HTML/CSS</div>
+                    <div class="skill-list">Python, Go (Golang), Java, JavaScript, TypeScript, SQL, R, HTML/CSS</div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-title">Libraries & Frameworks</div>
-                    <div class="skill-list">scikit-learn, XGBoost, PyTorch, pandas, NumPy, FastAPI, Flask, React</div>
+                    <div class="skill-title">Libraries</div>
+                    <div class="skill-list">scikit-learn, PyTorch, pandas, NumPy, SciPy, React</div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-title">Tools & Platforms</div>
-                    <div class="skill-list">Git, Docker, Jupyter Notebook, VS Code, RStudio, Microsoft Excel, LaTeX</div>
+                    <div class="skill-title">Frameworks</div>
+                    <div class="skill-list">FastAPI, Next.js, Spring Boot</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Tools</div>
+                    <div class="skill-list">Git, Docker</div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-title">Databases & Cloud</div>
-                    <div class="skill-list">PostgreSQL, GCP (Google Cloud Platform), AWS (Amazon Web Services), Microsoft Azure</div>
+                    <div class="skill-list">PostgreSQL, GCP (Google Cloud Platform)</div>
                 </div>
             </div>
         </section>
